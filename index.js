@@ -98,8 +98,8 @@ let total = 0;
 
 for (i = 0; i < finances.length; i++) {
   sum += finances[i][1];
-  console.log(sum);
 }
+console.log("Total: " + sum);
 
 /* All in one console.log 
 
