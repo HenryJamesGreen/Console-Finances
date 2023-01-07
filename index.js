@@ -113,13 +113,14 @@ for (let i = 0; i < finances.length - 1; i++) {
 averageChange = (totalChange / change.length).toFixed(2);
 
 console.log(averageChange);
-/*
-for (i = 0; i < finances.length; i++) {
-    totalSum += finances[i][1];
-    console.log(totalSum);
-}
 
+let greatestIncrease = Math.max(...change);
+let greatestDecrease = Math.min(...change);
+let MonthIncrease = change.indexOf(greatestIncrease) + 1;
+let MonthDecrease = change.indexOf(greatestDecrease) + 1;
 
+console.log(finances[MonthIncrease][0] + " $" + greatestIncrease);
+console.log(finances[MonthDecrease][0] + " $" + greatestDecrease);
 
 /* All in one console.log 
 
