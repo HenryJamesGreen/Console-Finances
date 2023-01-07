@@ -87,11 +87,17 @@ var finances = [
   ["Feb-2017", 671099],
 ];
 
-/* Separate */
+/* Initial checks 
 
+Title:
 console.log("Financial Analysis");
+
+Line:
 console.log("---------------------------");
+
+Total months:
 console.log("Total months: " + finances.length);
+*/
 
 let sum = 0;
 let total = 0;
@@ -101,7 +107,11 @@ averageChange = 0;
 for (i = 0; i < finances.length; i++) {
   sum += finances[i][1];
 }
+
+/* check - the above adds together each second variable of the arrays (the numbers) to calculate total.
+Total sum:
 console.log("Total: " + sum);
+*/
 
 let change = [];
 
@@ -112,15 +122,23 @@ for (let i = 0; i < finances.length - 1; i++) {
 
 averageChange = (totalChange / change.length).toFixed(2);
 
+/* check - . start at feb 2010 - Jan 2010, then March - Feb and so on. Since starting at +1, need to add -1, 
+so don't run over and show error. 
+All change logs added together = totalChange.
+avg change - self explanatory .toFixed(2) = to nearest hundreth (2 dec places).
 console.log(averageChange);
+*/
 
 let greatestIncrease = Math.max(...change);
 let greatestDecrease = Math.min(...change);
 let MonthIncrease = change.indexOf(greatestIncrease) + 1;
 let MonthDecrease = change.indexOf(greatestDecrease) + 1;
 
+/* check - search for greatest increase/greatest decrease (min/max) of array 'change'.
+take that increase
 console.log(finances[MonthIncrease][0] + " $" + greatestIncrease);
 console.log(finances[MonthDecrease][0] + " $" + greatestDecrease);
+*/
 
 /* All in one console.log */
 
