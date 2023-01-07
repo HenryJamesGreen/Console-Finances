@@ -122,6 +122,24 @@ let MonthDecrease = change.indexOf(greatestDecrease) + 1;
 console.log(finances[MonthIncrease][0] + " $" + greatestIncrease);
 console.log(finances[MonthDecrease][0] + " $" + greatestDecrease);
 
-/* All in one console.log 
+/* All in one console.log */
 
-console.log("Financial Analysis \n---------------------------"  + "\nTotal months: " + finances.length); */
+console.log(
+  "Financial Analysis \n---------------------------" +
+    "\nTotal months: " +
+    finances.length +
+    "\nTotal: $" +
+    sum +
+    "\nAverage Change: $" +
+    averageChange +
+    "\nGreatest Increase in profits: " +
+    finances[MonthIncrease][0] +
+    " ($" +
+    greatestIncrease +
+    ")" +
+    "\nGreatest Decrease in profits: " +
+    finances[MonthDecrease][0] +
+    " $(" +
+    greatestDecrease +
+    ")"
+);
