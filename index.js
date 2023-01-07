@@ -95,11 +95,31 @@ console.log("Total months: " + finances.length);
 
 let sum = 0;
 let total = 0;
+let totalChange = 0;
+averageChange = 0;
 
 for (i = 0; i < finances.length; i++) {
   sum += finances[i][1];
 }
 console.log("Total: " + sum);
+
+let change = [];
+
+for (let i = 0; i < finances.length - 1; i++) {
+  change.push(finances[i + 1][1] - finances[i][1]);
+  totalChange += change[i];
+}
+
+averageChange = (totalChange / change.length).toFixed(2);
+
+console.log(averageChange);
+/*
+for (i = 0; i < finances.length; i++) {
+    totalSum += finances[i][1];
+    console.log(totalSum);
+}
+
+
 
 /* All in one console.log 
 
