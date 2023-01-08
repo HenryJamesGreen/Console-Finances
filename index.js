@@ -123,7 +123,7 @@ for (let i = 0; i < finances.length - 1; i++) {
 averageChange = (totalChange / change.length).toFixed(2);
 
 /* check - . start at feb 2010 - Jan 2010, then March - Feb and so on. Since starting at +1, need to add -1, 
-so don't run over and show error. 
+so don't run over and show error (only 85 subtractions can fit into 86 numbers). 
 All change logs added together = totalChange.
 avg change - self explanatory .toFixed(2) = to nearest hundreth (2 dec places).
 console.log(averageChange);
@@ -138,10 +138,10 @@ let greatestDecrease = Math.min(...change);
 let MonthIncrease = change.indexOf(greatestIncrease) + 1;
 let MonthDecrease = change.indexOf(greatestDecrease) + 1;
 
-/* check - search for greatest increase/greatest decrease (min/max) of array 'change'.
+/* check - search for greatest increase/greatest decrease (max/min) of array 'change'.
 take that increase, find it within the index of 'changes', and add 1 
 (because you can only have 85 change totals between 86 months.
-Since we started in Feb and subtracted Jan (for Jan-Feb total), the result shows as working a month behind in the array of change. 
+Since we started in Feb and subtracted Jan (for Jan-Feb total), the result shows as working a month before in the change array. 
 Refer to 'list' in console.log in comments for change, to see a visual representation.
 console.log(finances[MonthIncrease][0] + " $" + greatestIncrease);
 console.log(finances[MonthDecrease][0] + " $" + greatestDecrease);
