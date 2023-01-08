@@ -129,13 +129,20 @@ avg change - self explanatory .toFixed(2) = to nearest hundreth (2 dec places).
 console.log(averageChange);
 */
 
+/* list:
+console.log(change);
+*/
+
 let greatestIncrease = Math.max(...change);
 let greatestDecrease = Math.min(...change);
 let MonthIncrease = change.indexOf(greatestIncrease) + 1;
 let MonthDecrease = change.indexOf(greatestDecrease) + 1;
 
 /* check - search for greatest increase/greatest decrease (min/max) of array 'change'.
-take that increase
+take that increase, find it within the index of 'changes', and add 1 
+(because you can only have 85 change totals between 86 months.
+Since we started in Feb and subtracted Jan (for Jan-Feb total), the result shows as working a month behind in the array of change. 
+Refer to 'list' in console.log in comments for change, to see a visual representation.
 console.log(finances[MonthIncrease][0] + " $" + greatestIncrease);
 console.log(finances[MonthDecrease][0] + " $" + greatestDecrease);
 */
