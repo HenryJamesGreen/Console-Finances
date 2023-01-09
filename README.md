@@ -10,8 +10,7 @@ This project displays finincial analysis in the console, available to view insid
 - The greatest increase in profits over the given period.
 - The greatest decrease in losses over the given period.
 
-![](20230109130131.png)  
-
+![](20230109130131.png)
 
 ## Installation
 
@@ -19,9 +18,9 @@ N/A
 
 ## Usage
 
-Wesbite link: https://henryjamesgreen.github.io/Bootstrap-Portfolio/
+Wesbite link:
 
-The website can be used to acces information about me, my skills, my work, contact information and to view my external resume. PLEASE NOTE: Includes small use of media queries, in order to display modal element more conveniently for mobile and desktop users.
+To run the code, visit the link above, and access dev tools, by pressing command+Option+I (macOS) or Control+Shift+I (Windows), and then selecting 'console' to view the data.
 
 ## Credits
 
