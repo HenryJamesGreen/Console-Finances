@@ -102,7 +102,7 @@ console.log("Total months: " + finances.length);
 let sum = 0;
 let total = 0;
 let totalChange = 0;
-averageChange = 0;
+let averageChange = 0;
 
 for (i = 0; i < finances.length; i++) {
   sum += finances[i][1];
