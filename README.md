@@ -10,7 +10,7 @@ This project displays finincial analysis in the console, available to view insid
 - The greatest increase in profits over the given period.
 - The greatest decrease in losses over the given period.
 
-![](image.png)  
+![](20230109130131.png)  
 
 
 ## Installation
