@@ -141,7 +141,8 @@ let MonthDecrease = change.indexOf(greatestDecrease) + 1;
 /* check - search for greatest increase/greatest decrease (max/min) of array 'change'.
 take that increase, find it within the index of 'changes', and add 1 
 (because you can only have 85 change totals between 86 months.
-Since we started in Feb and subtracted Jan (for Jan-Feb total), the result shows as working a month before in the change array. 
+Since we started in Feb and subtracted Jan (for Jan-Feb total), 
+the result shows as working a month before in the change array). 
 Refer to 'list' in console.log in comments for change, to see a visual representation.
 console.log(finances[MonthIncrease][0] + " $" + greatestIncrease);
 console.log(finances[MonthDecrease][0] + " $" + greatestDecrease);
