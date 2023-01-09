@@ -24,7 +24,11 @@ To run the code, visit the link above, and access dev tools, by pressing command
 
 ## Credits
 
-Software development week 3, available at https://github.com/skills-bootcamp/frontend-dev.git
+- toFixed Documentation - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed
+- Marta Milewczyk (via Slack) - https://github.com/MartaMilewczyk
+- Sean Howe (via slack) - https://github.com/SeanMH8911
+- w3 Schools (indexOf) - https://www.w3schools.com/jsref/jsref_indexof.asp
+- Math.min and Math.max - mdn web docs\_ - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/min
 
 ## License
 
