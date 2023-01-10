@@ -18,11 +18,9 @@ N/A
 
 ## Usage
 
-Wesbite link:
+Wesbite link: https://henryjamesgreen.github.io/Console-Finances/
 
 To run the code, visit the link above, and access dev tools, by pressing command+Option+I (macOS) or Control+Shift+I (Windows), and then selecting 'console' to view the data.
-
-https://henryjamesgreen.github.io/Console-Finances/
 
 ## Credits
 
